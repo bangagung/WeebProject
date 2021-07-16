@@ -5,6 +5,7 @@
 #
 """ Userbot initialization. """
 
+import nekos
 import os
 import signal
 import time
