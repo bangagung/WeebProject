@@ -24,8 +24,8 @@ async def help_handler(event):
         head3 = "Usage: `.help` `<module name>`"
         head4 = "List for all available command below: "
         string = ""
-        sep1 = "`••••••••••••••••••••••••••••••••••••••••••••••`"
-        sep2 = "`=========================================`"
+        sep1 = "`•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••`"
+        sep2 = "`=======================================`"
         for i in sorted(CMD_HELP):
             string += "`" + str(i)
             string += "`  |  "
