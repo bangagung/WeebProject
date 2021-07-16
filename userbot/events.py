@@ -143,22 +143,16 @@ def register(**args):
                     with open("error.txt", "w+") as file:
                         file.write(ftext)
 
-                    if LOGSPAMMER:
-                        await check.respond(
-                            "`Sorry, my userbot has crashed."
-                            "\nThe error logs are stored in the userbot's log chat.`"
-                        )
+                    # if LOGSPAMMER:
+                    #    await check.respond(
+                    #        "`Sorry, my userbot has crashed.\
+                    #    \nThe error logs are stored in the userbot's log chat.`"
+                    #    )
 
-                        async with ClientSession() as ses, ses.post(
-                            "https://api.katb.in/api/paste", json={"content": ftext}
-                        ) as resp:
-                            url = (
-                                f"https://katb.in/{(await resp.json()).get('paste_id')}"
-                            )
-                        text += f"\n\nPasted to : [Katb.in]({url})"
-
-                        await check.client.send_file(send_to, "error.txt", caption=text)
-                        remove("error.txt")
+                    # await check.client.send_file(send_to,
+                    #                             "error.log",
+                    #                             caption=text)
+                    remove("error.log")
             else:
                 pass
 
