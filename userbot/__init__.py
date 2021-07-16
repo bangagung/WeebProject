@@ -7,6 +7,7 @@
 
 import os
 import signal
+import time
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
 from platform import python_version
@@ -79,7 +80,7 @@ HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/BianSepang/WeebProject.git"
+    "UPSTREAM_REPO_URL", "https://github.com/bangagung/WeebProject.git"
 )
 # UPSTREAM_REPO_URL branch, the default is master
 UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "master")
