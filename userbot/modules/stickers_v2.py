@@ -38,7 +38,7 @@ async def _(event):
             await event.client.delete_message(conv.chat_id, [msg.id, response.id])
 
 
-@register(outgoing=True, pattern="^.get$")
+@register(outgoing=True, pattern="^.stoi$")
 async def _(event):
     if event.fwd_from:
         return
@@ -85,7 +85,7 @@ async def _(event):
         await bot.send_read_acknowledge(conv.chat_id)
 
 
-@register(outgoing=True, pattern="^.stoi$")
+@register(outgoing=True, pattern="^.get$")
 async def sticker_to_png(sticker):
     if not sticker.is_reply:
         await sticker.edit("`NULL information to feftch...`")
@@ -96,7 +96,7 @@ async def sticker_to_png(sticker):
         await sticker.edit("Ini Bukan sticker Goblok!!!...`")
         return False
 
-    await sticker.edit("`Stiker Berhasil Di Colong!`")
+    await sticker.edit("`Stiker Berhasil Di Ubah!`")
     image = io.BytesIO()
     await sticker.client.download_media(img, image)
     image.name = "sticker.png"
@@ -110,9 +110,9 @@ async def sticker_to_png(sticker):
 
 CMD_HELP.update(
     {
-        "stickers_v2": ">`.itos`"
-        "\nUsage: Reply .itos to a sticker or an image to kang it to your userbot no pack "
-        "\n\n>`.get`"
-        "\nUsage: reply to a sticker to get 'PNG' file of sticker."
+       "stickers_v2": ">`.itos`"
+        "\nUsage: balas .itos ke gambar untuk mengubahnya menjadi stiker  "
         "\n\n>`.stoi`"
-        "\nUsage: reply to a sticker to get 'PNG' file of sticker."})
+        "\nUsage: balas ke stiker untuk mendapatkan preview stiker."
+        "\n\n>`.get`"
+        "\nUsage: balas ke stiker untuk mendapatkan file 'PNG' stiker."})
