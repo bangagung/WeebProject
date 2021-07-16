@@ -5,6 +5,7 @@
 #
 """ Userbot module for getting information about the server. """
 
+import time
 from asyncio import create_subprocess_exec as asyncrunapp
 from asyncio.subprocess import PIPE as asyncPIPE
 from os import remove
@@ -133,12 +134,14 @@ async def amireallyalive(alive):
     """For .alive command, check if the bot is running."""
     logo = ALIVE_LOGO
     output = (
-        f"`WeebProject` is running on `{repo.active_branch.name}`\n"
-        "`====================================`\n"
-        f"🐍 `Python         :` v{python_version()}\n"
-        f"⚙️ `Telethon       :` v{version.__version__}\n"
-        f"👤 `User           :` {DEFAULTUSER}\n"
-        "`====================================`\n"
+        f"۝⩵꙰ཱི►WeebProject◄⩵꙰ཱི۝\n running on 👉 `{repo.active_branch.name}` 👈\n"
+        f"╭━━━━━━━━━━━━━━━━━━━━━━━━━╮\n"
+        f"┣[•👤 `User        :` {DEFAULTUSER}\n"
+        f"┣[•🐍 `Python      :` v{python_version()}\n"
+        f"┣[•⚙️ `Telethon    :` v{version.__version__}\n"
+        f"┣[•🕒 `Bot Uptime  :` {uptime}\n"
+        f"┣[•🛠 `Mod By      :` Belegung\n"
+        f"╰━━━━━━━━━━━━━━━━━━━━━━━━━╯\n"
     )
     if ALIVE_LOGO:
         try:
