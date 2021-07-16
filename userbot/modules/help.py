@@ -24,20 +24,20 @@ async def help(event):
             await asyncio.sleep()
             await event.delete()
     else:
-        await event.edit(f"**╭━━━━━━━━━━━━━━━━━━━━━╮**\
-            \n│   Help for [📝WeebProject📝]\
-            \n╰━━━━━━━━━━━━━━━━━━━━━╯ \
+        await event.edit(f"**╭━━━━━━━━━━━━━━━━━━━╮**\
+            \n   Help for [📝WeebProject📝]\
+            \n╰━━━━━━━━━━━━━━━━━━━╯ \
             \n╭━━━━━━━━━━━━━━━━━━━━━╮\
-            \n│   Untuk melihat lengkap Command\
-            \n│   Contoh: .help <nama module>\
-            \n│   Modules Aktif: {len(modules)}\
+            \n   Untuk melihat lengkap Command\
+            \n   Contoh: .help <nama module>\
+            \n   Modules Aktif: {len(modules)}\
            \n╰━━━━━━━━━━━━━━━━━━━━━╯")
         string = ""
         for i in CMD_HELP:
             string += "`" + str(i)
             string += "`\t• "
         h = await event.reply(f"•{string}•"
-                              "\n╾─────────────────────╼")
+                              "\n╾────────────────────────╼")
         await asyncio.sleep()
         await h.delete()
         await event.delete()
