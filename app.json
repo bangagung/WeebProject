@@ -1,6 +1,7 @@
 {
   "name": "WeebProject UserBot",
   "description": "[WeebProject] A modular Telegram userbot running on Python 3.8",
+  "logo": "https://telegra.ph/file/ae9ffbf9ac1a3ed2b20e0.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -44,7 +45,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "In case you maintain a fork, add your repo URL here.",
-      "value": "https://github.com/BianSepang/WeebProject",
+      "value": "https://github.com/bangagung/WeebProject",
       "required": false
     },
     "COUNTRY": {
@@ -122,11 +123,27 @@
     },
     "DEFAULT_BIO": {
       "description": "Default profile bio.",
-      "value": "Hoooman",
+      "value": "SPAM PM MAYBE BLOCK",
       "required": false
+    },
+    "G_BAN_LOGGER_GROUP": {
+      "description": " "Group id for log Gban&fban"
+      "value": "0"
     },
     "G_DRIVE_DATA": {
       "description": "Your client_secret.json.",
+      "required": false
+    },
+    "G_DRIVE_CLIENT_ID"
+      "description": "Gdrive client id"
+      "required": false
+    },
+    "G_DRIVE_CLIENT_SECRET"
+      "description": "Gdrive client secret id"
+      "required": false
+    },
+    "G_DRIVE_FOLDER_ID"
+      "description": "Gdrive folder id"
       "required": false
     },
     "G_DRIVE_INDEX_URL": {
@@ -136,6 +153,14 @@
     "GENIUS_ACCESS_TOKEN": {
       "description": "Client Access Token from https://genius.com/api-clients.",
       "required": false
+    },
+    "GITHUB_ACCESS_TOKEN": {
+      "description": "Client Access Token from github",
+      "required": false
+    },
+    "HEROKU_MEMEZ": {
+      "description": "Heroku memez"
+      "value": "true"
     },
     "WEATHER_DEFCITY": {
       "description": "Set the default city for the userbot's weather module.",
@@ -149,10 +174,26 @@
       "description": "Set this to True in case you want the error logs to be stored in the userbot log group, instead of spitting out the file in the current chat, requires a valid BOTLOG_CHATID to be set.",
       "value": "True"
     },
+    "OWNER_ID": {
+      "description": "Fill your id"
+      "required": false
+    },
     "DEEZER_ARL_TOKEN": {
       "description": "Input your DEEZER ARL TOKEN",
       "value": "",
       "required": false
+    }, 
+    "S_PACK_NAME": {
+      "description": "Sticker pack name"
+      "required": false
+    },
+    "SPAM_WATCH_API" {
+      "description": "Spamwatch token"
+      "required": false
+    },
+    "TELEGRAPH_SHORT_NAME" {
+      "description": "Telegraph short name"
+      "required": true
     },
     "TERM_ALIAS": {
       "description": "Display user for .term command",
