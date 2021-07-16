@@ -45,7 +45,6 @@ lottie
 lxml
 lyricsgenius
 natsort
-nekos
 oauth2client
 patool
 pendulum
