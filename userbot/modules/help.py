@@ -25,7 +25,7 @@ async def help(event):
             await event.delete()
     else:
         await event.edit(f"**╭━━━━━━━━━━━━━━━━━╮**\
-            \n   Help for 👷‍♂WeebProject👷‍♂\
+            \n    Help for 👷‍♂WeebProject👷‍♂\
             \n╰━━━━━━━━━━━━━━━━━╯ \
             \n╭━━━━━━━━━━━━━━━━━━━━━╮\
             \n   Untuk melihat lengkap Command\
@@ -37,7 +37,7 @@ async def help(event):
             string += "`" + str(i)
             string += "`\t• "
         h = await event.reply(f"•{string}•"
-                              "\n╾─────────────────────────────╼")
+                              "\n╾───────────────────────────────╼")
         await asyncio.sleep()
         await h.delete()
         await event.delete()
