@@ -5,7 +5,9 @@
 #
 """ Userbot initialization. """
 
+import io
 import os
+import random
 import re
 import signal
 import sys
