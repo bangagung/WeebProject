@@ -176,12 +176,11 @@ async def dyno_usage(dyno):
             await dyno.edit(
                 "**Dyno Usage**:\n\n╭━━━━━━━━━━━━━━━━━━━━╮\n"
                 f"-> `Dyno usage for`  **{app.name}**:\n"
-                f"     •  **{AppHours} hour"
-                f"{AppMinutes} minute  |  {AppPercentage}%**"
+                f"     •  **{AppHours} h "
+                f"{AppMinutes} m  |  {AppPercentage}%**"
                 "\n  ≪━━◈≪━─━─࿇─━─━≫◈━━≫\n"
                 "-> `Dyno hours quota remaining this month`:\n"
-                f"     •  **{hours} hour {minutes} minute  "
-                f"|  {percentage}%**"
+                f"     •  **{hours} h {minutes} m |  {percentage}%**"
                 "╰━━━━━━━━━━━━━━━━━━━━╯"
             )
             return True
