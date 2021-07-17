@@ -21,8 +21,6 @@ async def help(event):
             await event.edit(str(CMD_HELP[args]))
         else:
             await event.edit("**Module Salah !!!**")
-            await asyncio.sleep()
-            await event.delete()
     else:
         await event.edit(f"**╭━━━━━━━━━━━━━━━━━╮**\
             \n    Help for 👷‍♂WeebProject👷‍♂\
@@ -36,8 +34,5 @@ async def help(event):
         for i in CMD_HELP:
             string += "`" + str(i)
             string += "`\t• "
-        h = await event.reply(f"•{string}•"
+        h = await event.reply(f"{string}•"
                               "\n╾───────────────────────────────────╼")
-        await asyncio.sleep()
-        await h.delete()
-        await event.delete()
